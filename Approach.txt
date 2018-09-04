@@ -1,0 +1,31 @@
+Weekly data was converted to monthly data.
+
+Features used: Year, Month, Country Name, Product ID, no. of holidays, no. of working days, Expense.
+
+'Expense' came out to be the most important feature.
+
+Training data set was divided into subsets for each unique combination of Country Name and Product ID, and then models were build on these sets seperately. This was done because sales price was in local currency. 
+
+Final Model is combination of xgboost and linear regression.
+
+Sales plots were made. Where a linear increasing trend was seen, Linear Regression models were used, otherwise XGBoost models were used.
+
+Linear Regression has been used for predicting sales of the following entries:
+Country name, Product ID
+Argentina, 2
+Columbia, 2
+Belgium, 2
+Denmark, 2
+England, 5
+
+XGBoost has been used for predicting sales of the following entries:
+Country name, Product ID
+Argentina, 1
+Argentina, 3
+Columbia, 1
+Finland, 4
+England, 4
+
+Moving Average has been used for predicting sales of the following entries:
+Country name, Product ID
+Columbia, 3
